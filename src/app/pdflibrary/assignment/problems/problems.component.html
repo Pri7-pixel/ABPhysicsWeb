@@ -1,0 +1,6 @@
+<div *ngFor="let problem of problems | async" (click)="redirect(problem.name)">
+  <div class="Element">
+    <img src="{{ problem.image }}" />
+    <div class="Element-name">{{ problem.name }}</div>
+  </div>
+</div>

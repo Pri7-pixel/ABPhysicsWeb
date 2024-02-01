@@ -1,0 +1,6 @@
+<div *ngFor="let class11 of class11s | async" (click)="launchpdf(class11.pdf)">
+  <div class="Element">
+    <img src="{{ class11.image }}" />
+    <div class="Element-name">{{ class11.name }}</div>
+  </div>
+</div>

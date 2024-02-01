@@ -1,0 +1,19 @@
+.main {
+  width: 50%;
+  margin: auto;
+}
+
+.dynamic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.class11-button,
+.class12-button {
+  border-radius: 25px;
+  display: block;
+  width: 100%;
+  margin: 40px auto;
+  background: linear-gradient(111.6deg, #0071bc 13.68%, #1b1464 124.95%);
+}

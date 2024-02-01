@@ -1,0 +1,28 @@
+.heading {
+  position: absolute;
+  width: 1000px;
+  height: 60px;
+  left: 120px;
+  top: 65px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #37679f;
+}
+
+.player {
+  background: black;
+  height: 37%;
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.des {
+  width: 40%;
+  height: 270px;
+  margin-top: 40px;
+  margin-left: 55%;
+  font-size: 25px;
+  text-align: right;
+  color: #37679f;
+}

@@ -1,0 +1,29 @@
+<div class="main">
+  <div class="dynamic">
+    <button
+      class="problems-button"
+      mat-raised-button
+      color="primary"
+      [routerLink]=""
+      fragment="problems"
+    >
+      Problems
+    </button>
+    <button
+      class="solutions-button"
+      mat-raised-button
+      color="primary"
+      [routerLink]=""
+      fragment="solutions"
+    >
+      Solutions
+    </button>
+  </div>
+
+  <div>
+    <ng-container
+      style="margin: auto"
+      *ngComponentOutlet="dynamicComponent"
+    ></ng-container>
+  </div>
+</div>

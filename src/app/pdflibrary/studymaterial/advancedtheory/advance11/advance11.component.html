@@ -1,0 +1,9 @@
+<div
+  *ngFor="let advance11 of advance11s | async"
+  (click)="redirect(advance11.name)"
+>
+  <div class="Element">
+    <img src="{{ advance11.image }}" />
+    <div class="Element-name">{{ advance11.name }}</div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div *ngFor="let board11 of board11s | async" (click)="redirect(board11.name)">
+  <div class="Element">
+    <img src="{{ board11.image }}" />
+    <div class="Element-name">{{ board11.name }}</div>
+  </div>
+</div>

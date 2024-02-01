@@ -1,0 +1,6 @@
+<div *ngFor="let special of specials | async" (click)="redirect(special.name)">
+  <div class="Element">
+    <img src="{{ special.image }}" />
+    <div class="Element-name">{{ special.name }}</div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="main">
+  <div class="dynamic">
+    <button
+      class="class9-button"
+      mat-raised-button
+      color="primary"
+      [routerLink]=""
+      fragment="found9"
+    >
+      Class 9
+    </button>
+    <button
+      class="class10-button"
+      mat-raised-button
+      color="primary"
+      [routerLink]=""
+      fragment="found10"
+    >
+      Class 10
+    </button>
+  </div>
+
+  <div>
+    <ng-container
+      style="margin: auto"
+      *ngComponentOutlet="dynamicComponent"
+    ></ng-container>
+  </div>
+</div>

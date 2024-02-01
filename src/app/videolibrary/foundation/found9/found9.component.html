@@ -1,0 +1,6 @@
+<div *ngFor="let found9 of found9s | async" (click)="redirect(found9.name)">
+  <div class="Element">
+    <img src="{{ found9.image }}" />
+    <div class="Element-name">{{ found9.name }}</div>
+  </div>
+</div>
