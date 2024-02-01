@@ -1,0 +1,21 @@
+.heading {
+  position: absolute;
+  width: 600px;
+  height: 60px;
+  left: 120px;
+  top: 65px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #37679f;
+}
+
+.maintenance {
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 120px;
+  top: 125px;
+  font-weight: normal;
+  font-size: 25px;
+  color: #37679f;
+}

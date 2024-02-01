@@ -1,0 +1,21 @@
+.error {
+  position: absolute;
+  width: 600px;
+  height: 60px;
+  left: 40%;
+  top: 40%;
+  font-weight: bold;
+  font-size: 50px;
+  color: #37679f;
+}
+
+.not {
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 40.5%;
+  top: 47%;
+  font-weight: normal;
+  font-size: 25px;
+  color: #37679f;
+}

@@ -1,0 +1,23 @@
+<div class="grid-container">
+  <div>
+    <h1 class="heading">
+      {{ topic }}
+    </h1>
+  </div>
+  <div
+    *ngFor="let chapter of chapters | async"
+    (click)="
+      launchvideo(
+        chapter.video,
+        chapter.description,
+        chapter.image,
+        chapter.name
+      )
+    "
+  >
+    <div class="Element">
+      <img src="{{ chapter.image }}" />
+      <div class="Element-name">{{ chapter.name }}</div>
+    </div>
+  </div>
+</div>

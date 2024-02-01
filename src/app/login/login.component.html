@@ -1,0 +1,53 @@
+<div *ngIf="!isSignedIn" class="login-page">
+  <img src="assets/Logo/AB Physics Logo.svg" alt="AB Physics.svg" />
+  <mat-card>
+    <mat-card-title class="student">Student Login</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Email"
+            required
+            name="email"
+            ngModel
+            #email="ngModel"
+          />
+          <mat-error *ngIf="email.invalid">Email is required</mat-error>
+          <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Password"
+            type="password"
+            required
+            minlength="6"
+            name="password"
+            ngModel
+            #password="ngModel"
+            [type]="hide ? 'text' : 'password'"
+          />
+          <mat-error *ngIf="password.errors && password.errors.required">
+            Password is required
+          </mat-error>
+          <mat-error *ngIf="password.errors && password.errors.minlength">
+            Password must be of length 6
+          </mat-error>
+          <mat-icon matSuffix (click)="hide = !hide">{{
+            hide ? "visibility_off" : "visibility"
+          }}</mat-icon>
+        </mat-form-field>
+        <button
+          (click)="onSignin(email.value, password.value)"
+          mat-raised-button
+          color="primary"
+          class="login-button"
+        >
+          LOGIN
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+<app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
